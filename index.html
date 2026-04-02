@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>For You ❤️</title>
   <style>
     body {
@@ -58,8 +59,8 @@
 const sound = document.getElementById("sound");
 
 function moveButton(btn) {
-  const x = Math.random() * (window.innerWidth - 100);
-  const y = Math.random() * (window.innerHeight - 50);
+  const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - btn.offsetHeight);
   btn.style.left = x + "px";
   btn.style.top = y + "px";
 }
